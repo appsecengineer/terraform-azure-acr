@@ -6,8 +6,3 @@ resource "azurerm_container_registry" "acr" {
   admin_enabled       = var.admin_enabled
 }
 
-resource "random_string" "random" {
-  length  = 8
-  special = false
-  upper   = false
-}
