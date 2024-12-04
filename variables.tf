@@ -42,3 +42,15 @@ variable "enable_encryption" {
   type        = bool
   default     = false
 }
+
+variable "enable_user_assigned_identity" {
+  description = "Enable UserAssigned identity for the resource"
+  type        = bool
+  default     = false
+}
+
+variable "user_assigned_identity_ids" {
+  description = "A list of UserAssigned identity IDs"
+  type        = list(string)
+  default     = []
+}
