@@ -24,3 +24,21 @@ variable "admin_enabled" {
   type        = bool
   default     = false
 }
+
+variable "key_vault_key_id" {
+  description = "The ID of the Key Vault key to be used for encryption"
+  type        = string
+  default     = null
+}
+
+variable "identity_client_id" {
+  description = "The client ID of the user-assigned identity for encryption"
+  type        = string
+  default     = null
+}
+
+variable "enable_encryption" {
+  description = "Enable encryption using a Key Vault key"
+  type        = bool
+  default     = false
+}
